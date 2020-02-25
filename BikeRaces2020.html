@@ -6,8 +6,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>Test</title>
-    <h1>UCI WorldTour Races 2020</h1>
+    <title>UCI WorldTour Races 2020</title>
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,18 +23,18 @@
 
     <style>
     body { margin:0; padding:0; }
-    #mapid { position: absolute; top:0; bottom:0; right:0; left:0; }
+    #map { position: absolute; top:0; bottom:0; right:0; left:0; }
     </style>
 
 </head>
 
 <body>
 
-    <div id="mapid"></div>
+    <div id="map"></div>
     
     <script>
 
-        var mymap = L.map('mapid').setView([48.289886, -28.391155], 4);
+        var mymap = L.map('map').setView([48.289886, -28.391155], 4);
 
         L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
             maxZoom: 18,
